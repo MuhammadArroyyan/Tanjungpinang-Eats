@@ -1,3 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDfI6wcLRMK8nnuYy1IEa7dEka0VMZwNj0",
+  authDomain: "my-portfolio-68a74.firebaseapp.com",
+  projectId: "my-portfolio-68a74",
+  storageBucket: "my-portfolio-68a74.firebasestorage.app",
+  messagingSenderId: "375453259273",
+  appId: "1:375453259273:web:f143bc07850d1872378ad8"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 // Fungsi untuk memuat data restoran berdasarkan kategori
 function loadRestaurants(category = 'all') {
     const restaurants = [
